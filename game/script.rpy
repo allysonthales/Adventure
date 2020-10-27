@@ -41,6 +41,8 @@ image side paiNaLogo = "pai.png"
 
 label start:
 
+    $vida = 5
+
     # atributos guarda
     $guarda_agressividade = 5
     $guarda_carisma = 1
@@ -282,6 +284,7 @@ label s16:
         mestre "Você não consegue carregar seu pai, os guardas o alcançam e desfere um golpe de espada em seu ombro."
         mestre "Você perde 1 de vida"
         $vida -= 1
+        jump s15
     else:
         mestre "Você consegue carregar seu pai até o muro."
         mestre "Praticamente o arrastando, mas claramente ele não vai conseguir andar. Seu pai diz:"
